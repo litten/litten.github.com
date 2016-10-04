@@ -2,42 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://litten.github.io/photos/index.html</loc>
+    
+    <lastmod>2016-10-04T05:47:58.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://litten.github.io/2016/09/25/diary-2016-0911-0924/</loc>
     
-    <lastmod>2016-10-01T02:45:26.000Z</lastmod>
+    <lastmod>2016-10-04T02:58:15.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://litten.github.io/2016/09/11/diary-2016-0904-0910/</loc>
     
-    <lastmod>2016-09-30T16:05:59.000Z</lastmod>
+    <lastmod>2016-10-04T02:24:11.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://litten.github.io/2016/02/09/my-fairy-tale3/</loc>
+    <loc>http://litten.github.io/2016/08/14/diary-2016-0807-0813/</loc>
     
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
+    <lastmod>2016-10-03T17:59:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://litten.github.io/2016/08/21/diary-2016-0814-0820/</loc>
+    
+    <lastmod>2016-10-03T17:58:02.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://litten.github.io/2016/04/01/changbaishan/</loc>
-    
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://litten.github.io/2012/12/24/coffee-pc/</loc>
-    
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://litten.github.io/2013/08/11/brief-oauth/</loc>
     
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     
@@ -51,7 +51,14 @@
   </url>
   
   <url>
-    <loc>http://litten.github.io/2016/07/18/diary-2016-0710-0716/</loc>
+    <loc>http://litten.github.io/2012/12/14/css-jiugongge/</loc>
+    
+    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://litten.github.io/2016/07/31/diary-2016-0724-0730/</loc>
     
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     
@@ -65,7 +72,7 @@
   </url>
   
   <url>
-    <loc>http://litten.github.io/2012/12/14/css-jiugongge/</loc>
+    <loc>http://litten.github.io/2016/07/18/diary-2016-0710-0716/</loc>
     
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     
@@ -86,13 +93,6 @@
   </url>
   
   <url>
-    <loc>http://litten.github.io/2016/07/31/diary-2016-0724-0730/</loc>
-    
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://litten.github.io/2012/12/19/a-chrismas-ico/</loc>
     
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
@@ -100,14 +100,7 @@
   </url>
   
   <url>
-    <loc>http://litten.github.io/2016/08/21/diary-2016-0814-0820/</loc>
-    
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://litten.github.io/2016/08/14/diary-2016-0807-0813/</loc>
+    <loc>http://litten.github.io/2013/08/11/brief-oauth/</loc>
     
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     
@@ -121,14 +114,7 @@
   </url>
   
   <url>
-    <loc>http://litten.github.io/2016/02/13/feng-shui/</loc>
-    
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://litten.github.io/2014/10/16/douban-index-for-chrome/</loc>
+    <loc>http://litten.github.io/2012/12/24/coffee-pc/</loc>
     
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     
@@ -149,13 +135,6 @@
   </url>
   
   <url>
-    <loc>http://litten.github.io/2016/08/01/gulangyu/</loc>
-    
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://litten.github.io/2013/10/06/handling-asynchronous-js/</loc>
     
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
@@ -163,7 +142,14 @@
   </url>
   
   <url>
-    <loc>http://litten.github.io/2015/02/21/guide-for-zb/</loc>
+    <loc>http://litten.github.io/2014/10/16/douban-index-for-chrome/</loc>
+    
+    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://litten.github.io/2016/02/13/feng-shui/</loc>
     
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     
@@ -177,14 +163,14 @@
   </url>
   
   <url>
-    <loc>http://litten.github.io/2012/12/13/hello-world/</loc>
+    <loc>http://litten.github.io/2015/02/21/guide-for-zb/</loc>
     
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://litten.github.io/2014/09/26/history-of-browser-useragent/</loc>
+    <loc>http://litten.github.io/2016/08/01/gulangyu/</loc>
     
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     
@@ -198,6 +184,13 @@
   </url>
   
   <url>
+    <loc>http://litten.github.io/2012/12/13/hello-world/</loc>
+    
+    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://litten.github.io/2014/08/31/hexo-theme-yilia/</loc>
     
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
@@ -205,14 +198,7 @@
   </url>
   
   <url>
-    <loc>http://litten.github.io/2015/04/28/img-lazy-load/</loc>
-    
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://litten.github.io/2014/08/01/kael-qrcode-info/</loc>
+    <loc>http://litten.github.io/2014/09/26/history-of-browser-useragent/</loc>
     
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     
@@ -233,7 +219,14 @@
   </url>
   
   <url>
-    <loc>http://litten.github.io/2014/01/10/lock-me-in-a-cup/</loc>
+    <loc>http://litten.github.io/2015/04/28/img-lazy-load/</loc>
+    
+    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://litten.github.io/2014/08/01/kael-qrcode-info/</loc>
     
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     
@@ -254,6 +247,13 @@
   </url>
   
   <url>
+    <loc>http://litten.github.io/2014/01/10/lock-me-in-a-cup/</loc>
+    
+    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://litten.github.io/2013/04/30/my-fairy-tale1/</loc>
     
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
@@ -261,7 +261,7 @@
   </url>
   
   <url>
-    <loc>http://litten.github.io/2014/02/05/my2013/</loc>
+    <loc>http://litten.github.io/2016/02/09/my-fairy-tale3/</loc>
     
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     
@@ -275,34 +275,6 @@
   </url>
   
   <url>
-    <loc>http://litten.github.io/2013/05/03/my-news-reader-box/</loc>
-    
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://litten.github.io/2014/08/14/reduce-http-requests/</loc>
-    
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://litten.github.io/2015/11/03/nginx-in-fe/</loc>
-    
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://litten.github.io/2013/08/20/oauth-rabbit/</loc>
-    
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://litten.github.io/2013/12/20/no-one-used-pro/</loc>
     
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
@@ -310,70 +282,7 @@
   </url>
   
   <url>
-    <loc>http://litten.github.io/2013/11/07/something-about-immersion/</loc>
-    
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://litten.github.io/2012/12/17/share-a-css-hack/</loc>
-    
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://litten.github.io/2012/12/16/theme-update1-dot-0/</loc>
-    
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://litten.github.io/2014/02/22/thinner-than-1px-border/</loc>
-    
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://litten.github.io/2014/05/27/safety-point-of-view-from-front-end/</loc>
-    
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://litten.github.io/2014/08/20/three-drama/</loc>
-    
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://litten.github.io/2016/01/04/the-storied-life-of-aj/</loc>
-    
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://litten.github.io/2014/08/22/two-magics-of-the-pilot/</loc>
-    
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://litten.github.io/2015/06/05/viewing-commentary/</loc>
-    
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://litten.github.io/2014/03/30/volunteer-activities/</loc>
+    <loc>http://litten.github.io/2013/05/03/my-news-reader-box/</loc>
     
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     
@@ -387,7 +296,98 @@
   </url>
   
   <url>
+    <loc>http://litten.github.io/2013/08/20/oauth-rabbit/</loc>
+    
+    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://litten.github.io/2015/11/03/nginx-in-fe/</loc>
+    
+    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://litten.github.io/2014/08/14/reduce-http-requests/</loc>
+    
+    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://litten.github.io/2012/12/17/share-a-css-hack/</loc>
+    
+    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://litten.github.io/2016/01/04/the-storied-life-of-aj/</loc>
+    
+    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://litten.github.io/2012/12/16/theme-update1-dot-0/</loc>
+    
+    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://litten.github.io/2014/08/20/three-drama/</loc>
+    
+    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://litten.github.io/2013/11/07/something-about-immersion/</loc>
+    
+    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://litten.github.io/2014/02/22/thinner-than-1px-border/</loc>
+    
+    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://litten.github.io/2014/08/22/two-magics-of-the-pilot/</loc>
+    
+    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://litten.github.io/2014/03/30/volunteer-activities/</loc>
+    
+    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://litten.github.io/2015/02/23/yilia-on-mobile/</loc>
+    
+    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://litten.github.io/2014/05/27/safety-point-of-view-from-front-end/</loc>
+    
+    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://litten.github.io/2015/06/05/viewing-commentary/</loc>
     
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     
@@ -401,7 +401,7 @@
   </url>
   
   <url>
-    <loc>http://litten.github.io/instagram/index.html</loc>
+    <loc>http://litten.github.io/assets/demo/jiugongge_demo.html</loc>
     
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     
@@ -409,13 +409,6 @@
   
   <url>
     <loc>http://litten.github.io/assets/demo/hack_demo.html</loc>
-    
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://litten.github.io/assets/demo/jiugongge_demo.html</loc>
     
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     
@@ -443,13 +436,6 @@
   </url>
   
   <url>
-    <loc>http://litten.github.io/assets/demo/coffee_pc_demo/pro-con.html</loc>
-    
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://litten.github.io/assets/demo/coffee_pc_demo/pro-con.js</loc>
     
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
@@ -458,6 +444,13 @@
   
   <url>
     <loc>http://litten.github.io/assets/demo/mediator/demo.html</loc>
+    
+    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://litten.github.io/assets/demo/coffee_pc_demo/pro-con.html</loc>
     
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     
@@ -478,14 +471,14 @@
   </url>
   
   <url>
-    <loc>http://litten.github.io/assets/demo/pre_css3_demo/demo.html</loc>
+    <loc>http://litten.github.io/assets/demo/my_news_reader/index.html</loc>
     
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://litten.github.io/assets/demo/my_news_reader/index.html</loc>
+    <loc>http://litten.github.io/assets/demo/pre_css3_demo/demo.html</loc>
     
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     
@@ -513,7 +506,7 @@
   </url>
   
   <url>
-    <loc>http://litten.github.io/assets/demo/gift/js/zepto.min.js</loc>
+    <loc>http://litten.github.io/assets/demo/gift/css/reset.css</loc>
     
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     
@@ -527,14 +520,21 @@
   </url>
   
   <url>
-    <loc>http://litten.github.io/assets/demo/gift/css/reset.css</loc>
+    <loc>http://litten.github.io/assets/demo/my_news_reader/js/main.js</loc>
     
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://litten.github.io/assets/demo/my_news_reader/js/main.js</loc>
+    <loc>http://litten.github.io/assets/demo/gift/js/zepto.min.js</loc>
+    
+    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://litten.github.io/2014/02/05/my2013/</loc>
     
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     

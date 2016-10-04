@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://litten.github.io/photos/index.html">
 <meta property="og:site_name" content="Litten的博客">
 <meta property="og:description" content="(function(u){var l;&quot;undefined&quot;!==typeof window?l=window:&quot;undefined&quot;!==typeof self&amp;&amp;(l=self);l.lazyload=u()})(function(){return function l(n,k,e){function r(g,m){if(!k[g]){if(!n[g]){var f=&quot;function&quot;==">
-<meta property="og:updated_time" content="2016-10-04T05:47:58.000Z">
+<meta property="og:updated_time" content="2016-10-04T12:38:19.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="相册">
 <meta name="twitter:description" content="(function(u){var l;&quot;undefined&quot;!==typeof window?l=window:&quot;undefined&quot;!==typeof self&amp;&amp;(l=self);l.lazyload=u()})(function(){return function l(n,k,e){function r(g,m){if(!k[g]){if(!n[g]){var f=&quot;function&quot;==">
@@ -195,6 +195,7 @@ a,c)};var f=[],p="function"===typeof e.MutationObserver,c=e.document.documentEle
 	.instagram .thumb {
 		width: 25%;
 		height: auto;
+	    position: relative;
 	    display: inline-block;
 	}
 	.instagram .album h1 em{
@@ -326,7 +327,6 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
   // parse slide data (url, title, size ...) from DOM elements 
   // (children of gallerySelector)
   var parseThumbnailElements = function(el) {
-  	console.log(el)
   	el = el.parentNode.parentNode;
     var thumbElements = el.getElementsByClassName('thumb'),
       numNodes = thumbElements.length,
@@ -334,6 +334,8 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
       figureEl,
       linkEl,
       size,
+      type,		// video or not
+      target,
       item;
 
     for (var i = 0; i < numNodes; i++) {
@@ -348,7 +350,8 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
       linkEl = figureEl.children[0]; // <a> element
 
       size = linkEl.getAttribute('data-size').split('x');
-
+      type = linkEl.getAttribute('data-type');
+      target = linkEl.getAttribute('data-target');
       // create slide object
       item = {
         src: linkEl.getAttribute('href'),
@@ -366,6 +369,12 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
       if (linkEl.children.length > 0) {
         // <img> thumbnail element, retrieving thumbnail url
         item.msrc = linkEl.children[0].getAttribute('src');
+        item.type = type;
+        item.target = target;
+        item.html = '<video src="'+target+'" controls="controls" autoplay="autoplay"></video>';
+        if (type === 'video') {
+        	//item.src = null;
+        }
       }
 
       item.el = figureEl; // save link to element for getThumbBoundsFn
@@ -412,7 +421,6 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
       }
 
       if (childNodes[i] === clickedListItem) {
-      	console.log(clickedListItem)
         index = nodeIndex;
         break;
       }
@@ -463,7 +471,6 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
       items;
 
     items = parseThumbnailElements(galleryElement);
-
     // define options (if needed)
     options = {
 
@@ -473,8 +480,8 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
       getThumbBoundsFn: function(index) {
         // See Options -> getThumbBoundsFn section of documentation for more info
         var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
-          pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
-          rect = thumbnail.getBoundingClientRect();
+        pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+        rect = thumbnail.getBoundingClientRect();
 
         return {
           x: rect.left,
@@ -516,6 +523,36 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
     // Pass data to PhotoSwipe and initialize it
     gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
     gallery.init();
+
+    var $tempVideo;
+    var stopVideoHandle = function() {
+    	if ($tempVideo) {
+    		$tempVideo.remove();
+    		$tempVideo = null;
+    	}
+    }
+    var changeHandle = function() {
+    	var item = gallery.currItem;
+    	stopVideoHandle();
+    	if (item.type === 'video') {
+    		console.log(item)
+    		var $ctn = item.container;
+    		var style = $ctn.getElementsByClassName('pswp__img')[0].style;
+    		var $video = document.createElement('video');
+    		$video.setAttribute('autoplay', 'autoplay');
+    		$video.setAttribute('controls', 'controls');
+    		$video.setAttribute('src', item.target);
+    		$video.style.width = style.width;
+    		$video.style.height = style.height;
+    		$video.style.position = 'absolute';
+    		$video.style.zIndex = 2;
+    		$tempVideo = $video;
+    		$ctn.appendChild($video);
+    	}
+    }
+    gallery.listen('initialZoomIn', changeHandle);
+    gallery.listen('afterChange', changeHandle);
+    gallery.listen('initialZoomOut', stopVideoHandle);
   };
 
   // loop through all gallery elements and bind events
@@ -545,6 +582,27 @@ var Viewer = (function() {
 var _collection = [];
 var _count = 0;
 
+function addMask(elem) {
+    var rect = elem.getBoundingClientRect();
+    var style = getComputedStyle(elem, null);
+
+    var mask = document.createElement('i');
+    mask.className = 'icon-film';
+    mask.style.color = '#fff';
+    mask.style.fontSize = '16px';
+    mask.style.position = 'absolute';
+    mask.style.right = '10px';
+    mask.style.bottom = '10px';
+    mask.style.zIndex = 1;
+    elem.parentNode.appendChild(mask);
+}
+
+var createVideoIncon = function() {
+	var $videoImg = $('.thumb a[data-type="video"]');
+	for (var i = 0, len = $videoImg.length; i < len; i++) {
+		addMask($videoImg[i])
+	}
+}
 var render = function(res) {
 
 	var ulTmpl = "";
@@ -565,8 +623,8 @@ var render = function(res) {
 							</div>\
 						</li>';*/
 			liTmpl += '<figure class="thumb" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">\
-		          <a href="'+src+'" itemprop="contentUrl" data-size="640x640">\
-		            <img data-src="'+src+'" src="/assets/photos/preloader.gif" itemprop="thumbnail" onload="lazy(this)"/>\
+		          <a href="'+src+'" itemprop="contentUrl" data-size="640x640" data-type="' + type + '" data-target="' + target + '">\
+		            <img data-type="' + type + '" data-src="'+src+'" src="/assets/photos/preloader.gif" itemprop="thumbnail" onload="lazy(this)"/>\
 		          </a>\
 		          <figcaption style="display:none" itemprop="caption description">'+data.text[i]+'</figcaption>\
 		      </figure>';
@@ -579,7 +637,7 @@ var render = function(res) {
 	$wrap.appendTo($(".instagram"));
 	$(ulTmpl).appendTo($wrap);
 
-
+	createVideoIncon();
 	Viewer.init();
 	//$("a[rel=example_group]").fancybox();
 }
@@ -852,7 +910,7 @@ window.onload = function() {
     <div class="article-info article-info-index">
       
       <a href="/photos/index.html" class="archive-article-date">
-  	<time datetime="2016-10-04T05:47:58.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-10-04</time>
+  	<time datetime="2016-10-04T12:38:19.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-10-04</time>
 </a>
       
       

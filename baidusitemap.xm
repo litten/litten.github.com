@@ -73,14 +73,33 @@
 
     
   <url>
-    <loc>http://litten.github.io/2013/05/03/my-news-reader-box/</loc>
+    <loc>http://litten.github.io/2016/02/09/my-fairy-tale3/</loc>
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     <data>
         <display>
-        <title>网易“聚合阅读”布局的实现</title>
-        <pubTime>2013-05-03T02:55:00.000Z</pubTime>
+        <title>失眠故事四【扎龙人】</title>
+        <pubTime>2016-02-08T19:55:00.000Z</pubTime>
+        
+        <tag>旧事</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://litten.github.io/2012/12/24/coffee-pc/</loc>
+    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
+    <data>
+        <display>
+        <title>生产者-消费者模型的coffeescript实现</title>
+        <pubTime>2012-12-24T15:51:00.000Z</pubTime>
         
         <tag>js</tag>
+         
+        <tag>coffeescript</tag>
          
          
            
@@ -107,6 +126,23 @@
 
     
   <url>
+    <loc>http://litten.github.io/2016/07/24/diary-2016-0717-0723/</loc>
+    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
+    <data>
+        <display>
+        <title>旧事 pokemon go 7.17-7.23</title>
+        <pubTime>2016-07-24T02:36:00.000Z</pubTime>
+        
+        <tag>旧事</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://litten.github.io/2012/12/31/css3-animater/</loc>
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     <data>
@@ -115,6 +151,23 @@
         <pubTime>2012-12-30T16:02:00.000Z</pubTime>
         
         <tag>css3</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://litten.github.io/2016/07/31/diary-2016-0724-0730/</loc>
+    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
+    <data>
+        <display>
+        <title>旧事 《巨人的陨落》7.24-7.30</title>
+        <pubTime>2016-07-31T02:36:00.000Z</pubTime>
+        
+        <tag>旧事</tag>
          
          
            
@@ -141,12 +194,12 @@
 
     
   <url>
-    <loc>http://litten.github.io/2016/07/24/diary-2016-0717-0723/</loc>
+    <loc>http://litten.github.io/2016/08/07/diary-2016-0731-0806/</loc>
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     <data>
         <display>
-        <title>旧事 pokemon go 7.17-7.23</title>
-        <pubTime>2016-07-24T02:36:00.000Z</pubTime>
+        <title>旧事 等风来 7.31-8.6</title>
+        <pubTime>2016-08-07T02:36:00.000Z</pubTime>
         
         <tag>旧事</tag>
          
@@ -177,13 +230,15 @@
 
     
   <url>
-    <loc>http://litten.github.io/2016/07/31/diary-2016-0724-0730/</loc>
+    <loc>http://litten.github.io/2012/12/18/assassins-creed/</loc>
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     <data>
         <display>
-        <title>旧事 《巨人的陨落》7.24-7.30</title>
-        <pubTime>2016-07-31T02:36:00.000Z</pubTime>
+        <title>记“刺客信条”三部曲：水月镜像，无心去来</title>
+        <pubTime>2012-12-18T15:23:00.000Z</pubTime>
         
+        <tag>游戏</tag>
+         
         <tag>旧事</tag>
          
          
@@ -194,14 +249,33 @@
 
     
   <url>
-    <loc>http://litten.github.io/2016/08/07/diary-2016-0731-0806/</loc>
+    <loc>http://litten.github.io/2014/02/12/about-pjax/</loc>
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     <data>
         <display>
-        <title>旧事 等风来 7.31-8.6</title>
-        <pubTime>2016-08-07T02:36:00.000Z</pubTime>
+        <title>pjax: 当ajax遇上pushState</title>
+        <pubTime>2014-02-12T00:55:00.000Z</pubTime>
         
-        <tag>旧事</tag>
+        <tag>js</tag>
+         
+        <tag>html5</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://litten.github.io/2016/04/01/changbaishan/</loc>
+    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
+    <data>
+        <display>
+        <title>长白山 | 来去匆匆，惊鸿一瞥</title>
+        <pubTime>2016-04-01T02:36:00.000Z</pubTime>
+        
+        <tag>旅行</tag>
          
          
            
@@ -230,69 +304,14 @@
 
     
   <url>
-    <loc>http://litten.github.io/2013/08/11/brief-oauth/</loc>
+    <loc>http://litten.github.io/2016/02/13/feng-shui/</loc>
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     <data>
         <display>
-        <title>谈谈OAuth1,OAuth2异同</title>
-        <pubTime>2013-08-11T02:55:00.000Z</pubTime>
-        
-        <tag>web</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://litten.github.io/2016/04/01/changbaishan/</loc>
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    <data>
-        <display>
-        <title>长白山 | 来去匆匆，惊鸿一瞥</title>
-        <pubTime>2016-04-01T02:36:00.000Z</pubTime>
-        
-        <tag>旅行</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://litten.github.io/2012/12/24/coffee-pc/</loc>
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    <data>
-        <display>
-        <title>生产者-消费者模型的coffeescript实现</title>
-        <pubTime>2012-12-24T15:51:00.000Z</pubTime>
-        
-        <tag>js</tag>
-         
-        <tag>coffeescript</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://litten.github.io/2015/02/21/guide-for-zb/</loc>
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    <data>
-        <display>
-        <title>IT圈装逼速成指南</title>
-        <pubTime>2015-02-21T14:50:00.000Z</pubTime>
+        <title>Minecraft与《协纪辨方书》</title>
+        <pubTime>2016-02-13T15:55:00.000Z</pubTime>
         
         <tag>旧事</tag>
-         
-        <tag>生活</tag>
          
          
            
@@ -321,6 +340,25 @@
 
     
   <url>
+    <loc>http://litten.github.io/2015/02/21/guide-for-zb/</loc>
+    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
+    <data>
+        <display>
+        <title>IT圈装逼速成指南</title>
+        <pubTime>2015-02-21T14:50:00.000Z</pubTime>
+        
+        <tag>旧事</tag>
+         
+        <tag>生活</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://litten.github.io/2013/04/15/graduation-shirt-design/</loc>
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     <data>
@@ -338,14 +376,14 @@
 
     
   <url>
-    <loc>http://litten.github.io/2016/02/13/feng-shui/</loc>
+    <loc>http://litten.github.io/2016/08/01/gulangyu/</loc>
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     <data>
         <display>
-        <title>Minecraft与《协纪辨方书》</title>
-        <pubTime>2016-02-13T15:55:00.000Z</pubTime>
+        <title>在鼓浪屿</title>
+        <pubTime>2016-07-31T17:36:00.000Z</pubTime>
         
-        <tag>旧事</tag>
+        <tag>旅行</tag>
          
          
            
@@ -355,14 +393,56 @@
 
     
   <url>
-    <loc>http://litten.github.io/2016/08/01/gulangyu/</loc>
+    <loc>http://litten.github.io/2015/07/06/hack-in-localstorage/</loc>
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     <data>
         <display>
-        <title>在鼓浪屿</title>
-        <pubTime>2016-07-31T17:36:00.000Z</pubTime>
+        <title>作为一个前端，可以如何机智地弄坏一台电脑？</title>
+        <pubTime>2015-07-06T14:30:00.000Z</pubTime>
         
-        <tag>旅行</tag>
+        <tag>js</tag>
+         
+        <tag>安全</tag>
+         
+        <tag>黑科技</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://litten.github.io/2013/10/06/handling-asynchronous-js/</loc>
+    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
+    <data>
+        <display>
+        <title>统一处理异步的js回调</title>
+        <pubTime>2013-10-06T02:55:00.000Z</pubTime>
+        
+        <tag>web</tag>
+         
+        <tag>js</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://litten.github.io/2014/09/26/history-of-browser-useragent/</loc>
+    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
+    <data>
+        <display>
+        <title>浏览器野史 UserAgent列传（上）</title>
+        <pubTime>2014-09-26T03:26:00.000Z</pubTime>
+        
+        <tag>web</tag>
+         
+        <tag>浏览器</tag>
          
          
            
@@ -401,65 +481,6 @@
         <tag>杂谈</tag>
          
         <tag>octopress</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://litten.github.io/2013/10/06/handling-asynchronous-js/</loc>
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    <data>
-        <display>
-        <title>统一处理异步的js回调</title>
-        <pubTime>2013-10-06T02:55:00.000Z</pubTime>
-        
-        <tag>js</tag>
-         
-        <tag>web</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://litten.github.io/2015/07/06/hack-in-localstorage/</loc>
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    <data>
-        <display>
-        <title>作为一个前端，可以如何机智地弄坏一台电脑？</title>
-        <pubTime>2015-07-06T14:30:00.000Z</pubTime>
-        
-        <tag>js</tag>
-         
-        <tag>安全</tag>
-         
-        <tag>黑科技</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://litten.github.io/2014/09/26/history-of-browser-useragent/</loc>
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    <data>
-        <display>
-        <title>浏览器野史 UserAgent列传（上）</title>
-        <pubTime>2014-09-26T03:26:00.000Z</pubTime>
-        
-        <tag>web</tag>
-         
-        <tag>浏览器</tag>
          
          
            
@@ -545,6 +566,29 @@
 
     
   <url>
+    <loc>http://litten.github.io/2014/08/01/kael-qrcode-info/</loc>
+    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
+    <data>
+        <display>
+        <title>爱上一匹二维马可我家里没有草原…</title>
+        <pubTime>2014-08-01T15:52:00.000Z</pubTime>
+        
+        <tag>js</tag>
+         
+        <tag>html5</tag>
+         
+        <tag>前端</tag>
+         
+        <tag>github</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://litten.github.io/2014/01/10/lock-me-in-a-cup/</loc>
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     <data>
@@ -564,20 +608,14 @@
 
     
   <url>
-    <loc>http://litten.github.io/2014/08/01/kael-qrcode-info/</loc>
+    <loc>http://litten.github.io/2013/04/30/my-fairy-tale1/</loc>
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     <data>
         <display>
-        <title>爱上一匹二维马可我家里没有草原…</title>
-        <pubTime>2014-08-01T15:52:00.000Z</pubTime>
+        <title>【裁缝的工具】【天气精灵】【匠人与万能胶水】</title>
+        <pubTime>2013-04-29T17:36:00.000Z</pubTime>
         
-        <tag>js</tag>
-         
-        <tag>html5</tag>
-         
-        <tag>前端</tag>
-         
-        <tag>github</tag>
+        <tag>旧事</tag>
          
          
            
@@ -623,23 +661,6 @@
 
     
   <url>
-    <loc>http://litten.github.io/2013/04/30/my-fairy-tale1/</loc>
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    <data>
-        <display>
-        <title>【裁缝的工具】【天气精灵】【匠人与万能胶水】</title>
-        <pubTime>2013-04-29T17:36:00.000Z</pubTime>
-        
-        <tag>旧事</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://litten.github.io/2013/09/10/my-fairy-tale2/</loc>
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     <data>
@@ -657,33 +678,14 @@
 
     
   <url>
-    <loc>http://litten.github.io/2016/02/09/my-fairy-tale3/</loc>
+    <loc>http://litten.github.io/2013/08/11/brief-oauth/</loc>
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     <data>
         <display>
-        <title>失眠故事四【扎龙人】</title>
-        <pubTime>2016-02-08T19:55:00.000Z</pubTime>
+        <title>谈谈OAuth1,OAuth2异同</title>
+        <pubTime>2013-08-11T02:55:00.000Z</pubTime>
         
-        <tag>旧事</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://litten.github.io/2014/02/12/about-pjax/</loc>
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    <data>
-        <display>
-        <title>pjax: 当ajax遇上pushState</title>
-        <pubTime>2014-02-12T00:55:00.000Z</pubTime>
-        
-        <tag>js</tag>
-         
-        <tag>html5</tag>
+        <tag>web</tag>
          
          
            
@@ -701,6 +703,23 @@
         <pubTime>2014-02-04T18:55:00.000Z</pubTime>
         
         <tag>旧事</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://litten.github.io/2013/05/03/my-news-reader-box/</loc>
+    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
+    <data>
+        <display>
+        <title>网易“聚合阅读”布局的实现</title>
+        <pubTime>2013-05-03T02:55:00.000Z</pubTime>
+        
+        <tag>js</tag>
          
          
            
@@ -746,14 +765,14 @@
 
     
   <url>
-    <loc>http://litten.github.io/2012/12/17/share-a-css-hack/</loc>
+    <loc>http://litten.github.io/2013/08/20/oauth-rabbit/</loc>
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     <data>
         <display>
-        <title>分享一个IE6，7的CSS hack bug</title>
-        <pubTime>2012-12-17T11:43:00.000Z</pubTime>
+        <title>兔子，胡萝卜与OAuth的故事</title>
+        <pubTime>2013-08-20T04:55:00.000Z</pubTime>
         
-        <tag>css</tag>
+        <tag>web</tag>
          
          
            
@@ -763,12 +782,12 @@
 
     
   <url>
-    <loc>http://litten.github.io/2013/08/20/oauth-rabbit/</loc>
+    <loc>http://litten.github.io/2014/05/27/safety-point-of-view-from-front-end/</loc>
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     <data>
         <display>
-        <title>兔子，胡萝卜与OAuth的故事</title>
-        <pubTime>2013-08-20T04:55:00.000Z</pubTime>
+        <title>前端安全冷门知识杂谈</title>
+        <pubTime>2014-05-27T15:52:00.000Z</pubTime>
         
         <tag>web</tag>
          
@@ -801,6 +820,23 @@
 
     
   <url>
+    <loc>http://litten.github.io/2012/12/17/share-a-css-hack/</loc>
+    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
+    <data>
+        <display>
+        <title>分享一个IE6，7的CSS hack bug</title>
+        <pubTime>2012-12-17T11:43:00.000Z</pubTime>
+        
+        <tag>css</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://litten.github.io/2013/11/07/something-about-immersion/</loc>
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     <data>
@@ -811,23 +847,6 @@
         <tag>旧事</tag>
          
         <tag>产品</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://litten.github.io/2014/05/27/safety-point-of-view-from-front-end/</loc>
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    <data>
-        <display>
-        <title>前端安全冷门知识杂谈</title>
-        <pubTime>2014-05-27T15:52:00.000Z</pubTime>
-        
-        <tag>web</tag>
          
          
            
@@ -854,16 +873,16 @@
 
     
   <url>
-    <loc>http://litten.github.io/2014/02/22/thinner-than-1px-border/</loc>
+    <loc>http://litten.github.io/2012/12/16/theme-update1-dot-0/</loc>
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     <data>
         <display>
-        <title>像素级细节：移动端1px border的实现</title>
-        <pubTime>2014-02-22T12:11:00.000Z</pubTime>
+        <title>Blog主题更新-1.0</title>
+        <pubTime>2012-12-16T07:16:00.000Z</pubTime>
         
-        <tag>html5</tag>
+        <tag>主题</tag>
          
-        <tag>css3</tag>
+        <tag>octopress</tag>
          
          
            
@@ -909,16 +928,16 @@
 
     
   <url>
-    <loc>http://litten.github.io/2012/12/16/theme-update1-dot-0/</loc>
+    <loc>http://litten.github.io/2014/02/22/thinner-than-1px-border/</loc>
     <lastmod>2016-09-30T14:42:26.000Z</lastmod>
     <data>
         <display>
-        <title>Blog主题更新-1.0</title>
-        <pubTime>2012-12-16T07:16:00.000Z</pubTime>
+        <title>像素级细节：移动端1px border的实现</title>
+        <pubTime>2014-02-22T12:11:00.000Z</pubTime>
         
-        <tag>主题</tag>
+        <tag>html5</tag>
          
-        <tag>octopress</tag>
+        <tag>css3</tag>
          
          
            
@@ -992,28 +1011,9 @@
         <title>web worker简易入门</title>
         <pubTime>2013-09-25T02:55:00.000Z</pubTime>
         
-        <tag>html5</tag>
-         
         <tag>web</tag>
          
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://litten.github.io/2012/12/18/assassins-creed/</loc>
-    <lastmod>2016-09-30T14:42:26.000Z</lastmod>
-    <data>
-        <display>
-        <title>记“刺客信条”三部曲：水月镜像，无心去来</title>
-        <pubTime>2012-12-18T15:23:00.000Z</pubTime>
-        
-        <tag>旧事</tag>
-         
-        <tag>游戏</tag>
+        <tag>html5</tag>
          
          
            

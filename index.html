@@ -3,13 +3,15 @@
 <head>
   <meta charset="utf-8">
   
+  <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <link rel="dns-prefetch" href="//litten.me">
   <title>Litten的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="华中科技大学09级，就职于腾讯SNG。擅长各项前端技能，深入研究移动端开发与前端性能。非专业视觉设计师。此为博客一枚。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Litten的博客">
-<meta property="og:url" content="http://litten.github.io/index.html">
+<meta property="og:url" content="//litten.me/index.html">
 <meta property="og:site_name" content="Litten的博客">
 <meta property="og:description" content="华中科技大学09级，就职于腾讯SNG。擅长各项前端技能，深入研究移动端开发与前端性能。非专业视觉设计师。此为博客一枚。">
 <meta name="twitter:card" content="summary">
@@ -19,23 +21,22 @@
     <link rel="alternative" href="/atom.xml" title="Litten的博客" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/assets/img/favicon.ico">
   
-  <script src="/style.js"></script>
+  <link rel="stylesheet" href="/main.css?v=4.0.0.css">
   
 
 </head>
 
 <body>
-  <div id="container">
-    <div class="left-col">
+  <div id="container" q-class="show:isCtnShow">
+    <canvas id="anm-canvas" class="anm-canvas"></canvas>
+    <div class="left-col" q-class="show:isShow">
       <div class="overlay"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			
 			<img src="/assets/blogImg/litten.png" class="js-avatar">
-			
 		</a>
 
 		<hgroup>
@@ -59,19 +60,14 @@
 	        
     		
     			
-    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
-    			
-    			
-            
-    			
-    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签</a>
+    			<a data-idx="0" q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
     			
     			
             
     			
             
     			
-    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">关于我</a>
+    			<a data-idx="1" q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
     			
             
@@ -79,11 +75,11 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="https://github.com/litten" title="github">github</a>
+					<a class="github" target="_blank" href="https://github.com/litten" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="weibo" target="_blank" href="http://weibo.com/litten225" title="weibo">weibo</a>
+					<a class="weibo" target="_blank" href="http://weibo.com/litten225" title="weibo"><i class="icon-weibo"></i></a>
 		        
-					<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+					<a class="rss" target="_blank" href="/atom.xml" title="rss"><i class="icon-rss"></i></a>
 		        
 			</div>
 		</nav>
@@ -91,18 +87,16 @@
 </div>
 
     </div>
-    <div class="mid-col">
+    <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       <nav id="mobile-nav">
   	<div class="overlay">
-  		<div class="slider-trigger"><i class="icon-list"></i></div>
+  		<div class="slider-trigger"><i class="icon-sort"></i></div>
   		<h1 class="header-author js-mobile-header hide">Litten</h1>
   	</div>
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				
-					<img src="/assets/blogImg/litten.png" class="js-avatar">
-				
+				<img src="/assets/blogImg/litten.png" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author">Litten</h1>
@@ -117,16 +111,19 @@
 		        
 					<li><a href="/photos">相册</a></li>
 		        
+		        
+		        	<li><a href="/archives">所有文章</a></li>
+		        
 				</ul>
 			</nav>
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="https://github.com/litten" title="github">github</a>
+						<a class="github" target="_blank" href="https://github.com/litten" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="weibo" target="_blank" href="http://weibo.com/litten225" title="weibo">weibo</a>
+						<a class="weibo" target="_blank" href="http://weibo.com/litten225" title="weibo"><i class="icon-weibo"></i></a>
 			        
-						<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+						<a class="rss" target="_blank" href="/atom.xml" title="rss"><i class="icon-rss"></i></a>
 			        
 				</div>
 			</nav>
@@ -134,14 +131,244 @@
 	</div>
 </nav>
 
-      <div class="body-wrap">
-        
+      <div id="wrapper" class="body-wrap">
+        <div class="menu-l">
+          <div class="canvas-wrap">
+            <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
+          </div>
+          <div id="js-content" class="content-ll">
+            
   
-    <article id="post-diary-2016-1001-1007" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-diary-2016-1030-1105" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
-      <input type="hidden" class="isFancy" />
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/06/diary-2016-1030-1105/">旧事 哪天才能歌唱的话 10.30-11.05</a>
+    </h1>
+  
+
+        <a href="/2016/11/06/diary-2016-1030-1105/" class="archive-article-date">
+  	<time datetime="2016-11-06T02:36:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-06</time>
+</a>
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=694286&auto=0&height=66"></iframe>
+
+<p>想起网易账户密码泄露，就发生在10月底。<br>去年的这个时候，我是受害者之一。</p>
+<p>但我没有着急改密码。<br>一是因为那个时候，我过着一种近乎抑郁灰白的生活。<br>所有的社交工具都停掉了，也不与人交流。<br>很多事情我不愿碰。<br>像燃尽的烟柱，自己伸手一掸，搞不好满世界尘埃<br>还不如让风来悄悄瘗埋。</p>
+<p>二是因为一位神秘的朋友闯进了生活。<br>我很喜欢冲绳民谣，在云音乐里上传了BEGIN的《三线の花》与《笑颜不变》。<br>这位朋友搞到我的账号密码后，貌似没做什么坏事，光给我推荐歌曲了…<br>TA先上传了没有版权的《岛人ぬ宝》，再后来是夏川和中孝介的一些歌。<br>那时，这些音乐，居然成了我跟外界连通的唯一绳索。</p>
+        <a class="article-more-a"  href="/2016/11/06/diary-2016-1030-1105/#more">more >></a>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/旧事/">旧事</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/11/06/diary-2016-1030-1105/#more">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-diary-2016-1023-1029" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/10/30/diary-2016-1023-1029/">旧事 木头人 10.23-10.29</a>
+    </h1>
+  
+
+        <a href="/2016/10/30/diary-2016-1023-1029/" class="archive-article-date">
+  	<time datetime="2016-10-30T02:36:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-10-30</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/assets/blogImg/diary-15.jpg" alt=""></p>
+<p>10月的最后一周，想在天气变冷前，完成一组照片。<br>主题跟树林有关，因为我很喜欢这个季节树叶的厚重感。<br>不过，木头比人难拍太多了。<br>人非草木，起码有表情，有温度，可以装扮。<br>有两次回来，我直接就把照片全删了，心情不太爽，怎么想都是这些树木不配合。</p>
+<p>后来妥协，是不是我得自己做些改变，营造一种拟人的环境呢？<br>因此按快门时，我都很平常的喊一声：“一二三茄子！”<br>那时天色已黑，别人一看这里没人啊…<br>吓坏了两个孩子。<br>对不起！</p>
+<p>另外，一个很重要的经验<br>去小树林记得要带six god…</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/旧事/">旧事</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/10/30/diary-2016-1023-1029/#more">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-diary-2016-1016-1022" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/10/23/diary-2016-1016-1022/">旧事 荔枝永远红不了 10.16-10.22</a>
+    </h1>
+  
+
+        <a href="/2016/10/23/diary-2016-1016-1022/" class="archive-article-date">
+  	<time datetime="2016-10-23T02:36:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-10-23</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/assets/blogImg/diary-14.jpg" alt=""></p>
+<p>这只猫，是我在公园认识的。<br>一年前它还很小，每天穿行于古旧的荔枝林。<br>傍晚我习惯到公园跑步，总能在固定的地点，看到阳光把它拉成巨大猛兽的情景。<br>然而它更喜欢阴影。</p>
+<p>第一次碰到它，他就躲在阴影里。<br>因为是在车底，给它起了个名字<br>叫阿杜…（逻辑满分，拒绝吐槽）</p>
+        <a class="article-more-a"  href="/2016/10/23/diary-2016-1016-1022/#more">more >></a>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/旧事/">旧事</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/10/23/diary-2016-1016-1022/#more">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-diary-2016-1008-1015" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/10/20/diary-2016-1008-1015/">旧事 返校日 10.8-10.15</a>
+    </h1>
+  
+
+        <a href="/2016/10/20/diary-2016-1008-1015/" class="archive-article-date">
+  	<time datetime="2016-10-20T02:36:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-10-20</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/assets/blogImg/diary-13.jpg" alt=""></p>
+<p>“我要回武汉！”<br>这句话说了一千遍，终于兑现成一张动车票。</p>
+<p>三年前，毕业的第二天，行李被盗，大学时所有的物件付之东流。<br>背着空空的行囊回家，越想越委屈，导演剧本不对啊，人家西游记八十一难，好歹是个HAPPY ENDING…<br>感觉自己有一种迷之体质，总可以把平静的生活过得波澜壮阔。<br>左脸黑线，右脸微笑，这种技能不是谁都可以，我在考虑要不申个遗。</p>
+<p>总之，国庆后大家都返工，过上岁月静好的生活时，我一个人扛起了到武汉搞事情的大旗。</p>
+        <a class="article-more-a"  href="/2016/10/20/diary-2016-1008-1015/#more">more >></a>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/旧事/">旧事</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/10/20/diary-2016-1008-1015/#more">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-diary-2016-1001-1007" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
     
       <header class="article-header">
         
@@ -151,24 +378,24 @@
     </h1>
   
 
+        <a href="/2016/10/08/diary-2016-1001-1007/" class="archive-article-date">
+  	<time datetime="2016-10-08T02:36:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-10-08</time>
+</a>
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
         <p><img src="/assets/blogImg/diary-10.jpg" alt=""></p>
-<p>《Way Home》是押尾的一首指弹，算不上热门，听的人也少。<br>我不喜欢一首吉他曲太过工整<br>羽翼丰满的老鹰，就没有了小鸟的自在。<br>不过，教科书般的工整，就是有一种禁锢的美感<br>你知道固定的那个时间，一定会出现那个音符，不差分毫。</p>
+<p>《Way Home》是押尾的一首指弹，算不上热门，听的人也少。<br>我不喜欢一首吉他曲太过工整，羽翼丰满的老鹰，就没有了小鸟的自在。<br>不过，教科书般的工整，就有一种禁锢的美感。<br>音符好似尺子上的刻度，不差分毫。<br>如果时间也是一把尺子，那回家这件事也应该是清晰有力的刻度吧。</p>
 <p>九月的最后一天，听着它，回了家。</p>
-<p>回家这件事，在这个时间点，也应该不差分毫。<br>动车穿越空间，音乐湮没时间<br>推开家门的一刻，好像一个匹配转场，书包一丢，喊一句：我回来了，好累啊<br>然后倒在沙发上等吃的，电视上正放着《数码宝贝》。<br>这才应该是那个“无限大な梦”啊！</p>
-        <p class="article-more-link">
-          <a class="article-more-a"  href="/2016/10/08/diary-2016-1001-1007/#more">more >></a>
-        </p>
+<p>推开门，好像一个转场回到从前，书包一丢，喊一句：我回来了，好累啊<br>然后倒在沙发上等吃的，电视上正放着《数码宝贝》。<br>这才应该是那个“无限大な梦”啊！</p>
+        <a class="article-more-a"  href="/2016/10/08/diary-2016-1001-1007/#more">more >></a>
+      
+
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/10/08/diary-2016-1001-1007/" class="archive-article-date">
-  	<time datetime="2016-10-08T02:36:00.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-10-08</time>
-</a>
       
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags"></i>
@@ -177,6 +404,13 @@
 
       
 
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/10/08/diary-2016-1001-1007/#more">展开全文 >></a>
+        </p>
+      
+
+      
       <div class="clearfix"></div>
     </div>
   </div>
@@ -189,14 +423,9 @@
 
 
 
-
-
   
-    <article id="post-diary-2016-0911-0924" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-diary-2016-0911-0924" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
     
       <header class="article-header">
         
@@ -206,29 +435,29 @@
     </h1>
   
 
+        <a href="/2016/09/25/diary-2016-0911-0924/" class="archive-article-date">
+  	<time datetime="2016-09-25T02:36:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-09-25</time>
+</a>
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
         <p><img src="/assets/blogImg/diary-9.jpg" alt=""></p>
 <blockquote>
-<p><em>市面上的web相册都不好用，干脆自己做了个<a href="http://120.24.181.238/gallery">相册</a>，github开源，取名为<a href="https://github.com/litten/zing-gallery">Zing</a>，待填坑…</em></p>
+<p><em>市面上的web相册都不好用，干脆自己做了个<a href="http://litten.me/gallery/%E7%8E%A9%C2%B7%E5%87%AF%E9%87%8C?password=guest">相册</a>，github开源，取名为<a href="https://github.com/litten/zing-gallery">Zing</a>，待填坑…</em></p>
 </blockquote>
 <hr>
 <p>6月初，要上腾讯大讲堂分享。<br>PPT准备得差不多，缺了个演讲的节奏。<br>我希望的风格是逻辑分明，又不会太过枯燥的，但均衡好这两者并不简单。</p>
 <p>又发觉，“逻辑分明”加“不太枯燥”，<br>掌握不好节奏，就是“一本正经“加”胡说八道”的意思呀！<br>这让我有点慌，搞不好过不久别人就指着我说：看，前端界的泥石流…</p>
 <p>于是那几天，一直听“一席”来找灵感。<br><a href="http://yixi.tv/lecture/366">毕赣《路边野餐》</a>的那一段意外的好，也从中深深地记住了一个陌生的地名：<strong>凯里</strong>。</p>
 <p>我喜欢那种，经行语言（而不是光影）就能渲染出来的，边陲小镇特有的青翠与市侩。</p>
-        <p class="article-more-link">
-          <a class="article-more-a"  href="/2016/09/25/diary-2016-0911-0924/#more">more >></a>
-        </p>
+        <a class="article-more-a"  href="/2016/09/25/diary-2016-0911-0924/#more">more >></a>
+      
+
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/09/25/diary-2016-0911-0924/" class="archive-article-date">
-  	<time datetime="2016-09-25T02:36:00.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-09-25</time>
-</a>
       
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags"></i>
@@ -237,6 +466,13 @@
 
       
 
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/09/25/diary-2016-0911-0924/#more">展开全文 >></a>
+        </p>
+      
+
+      
       <div class="clearfix"></div>
     </div>
   </div>
@@ -249,14 +485,9 @@
 
 
 
-
-
   
-    <article id="post-diary-2016-0904-0910" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-diary-2016-0904-0910" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
     
       <header class="article-header">
         
@@ -266,6 +497,9 @@
     </h1>
   
 
+        <a href="/2016/09/11/diary-2016-0904-0910/" class="archive-article-date">
+  	<time datetime="2016-09-11T02:36:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-09-11</time>
+</a>
       </header>
     
     <div class="article-entry" itemprop="articleBody">
@@ -278,12 +512,11 @@
 <p>恍惚中想起那个，每年惊蛰，朋友从东方带来一壶酒的故事…<br>然而早已白露而不是惊蛰，世间上也没有那壶叫醉生梦死的酒。</p>
 
       
+
+      
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/09/11/diary-2016-0904-0910/" class="archive-article-date">
-  	<time datetime="2016-09-11T02:36:00.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-09-11</time>
-</a>
       
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags"></i>
@@ -292,6 +525,13 @@
 
       
 
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/09/11/diary-2016-0904-0910/#more">展开全文 >></a>
+        </p>
+      
+
+      
       <div class="clearfix"></div>
     </div>
   </div>
@@ -304,14 +544,9 @@
 
 
 
-
-
   
-    <article id="post-diary-2016-0814-0820" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-diary-2016-0814-0820" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
     
       <header class="article-header">
         
@@ -321,6 +556,9 @@
     </h1>
   
 
+        <a href="/2016/08/21/diary-2016-0814-0820/" class="archive-article-date">
+  	<time datetime="2016-08-21T02:36:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-08-21</time>
+</a>
       </header>
     
     <div class="article-entry" itemprop="articleBody">
@@ -333,12 +571,11 @@
 <p>人有时候，<br>就应该热血而执拗<br>就应该忽略掉喋喋不休的劝诫<br>就应该蠢到无与伦比，不懂变通<br>只为在最终的最终，说上一句：<br>“还是我赢了”。</p>
 
       
+
+      
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/08/21/diary-2016-0814-0820/" class="archive-article-date">
-  	<time datetime="2016-08-21T02:36:00.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-08-21</time>
-</a>
       
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags"></i>
@@ -347,235 +584,17 @@
 
       
 
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-diary-2016-0807-0813" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/14/diary-2016-0807-0813/">旧事 神海 8.7-8.13</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="/assets/blogImg/diary-2.jpg" alt="神秘海域4"></p>
-<h4 id="神秘海域"><a href="#神秘海域" class="headerlink" title="神秘海域"></a>神秘海域</h4><p>从5月买的游戏，现在才有时间玩上。<br>近乎满分的作品，感谢顽皮狗一直以来的热诚。<br>同时，“神海”已经取缔了“古墓”在我心目中的地位…</p>
-<p>寻宝之路，哪来这么多的浪漫色彩？<br>你以为人生已经圆满，<br>你以为生活早已波澜不惊，<br>你以为年少的轻狂已只能想想而已</p>
-<p>但风云变幻就在一瞬，<br>谎言、梦想、亲情、背叛，如子弹般交织成网，<br>射穿了千丝万缕的爱恨情仇，也留下一个千疮百孔的自己。</p>
-<p>无论正牌反派，他们都是有血有肉的灵魂。</p>
-<p>德雷克拿起玩具水枪的那一幕，<br>让我觉得顽皮狗和育碧之间，至少差了10个B社。</p>
         <p class="article-more-link">
-          <a class="article-more-a"  href="/2016/08/14/diary-2016-0807-0813/#more">more >></a>
+          <a class="article-more-a" href="/2016/08/21/diary-2016-0814-0820/#more">展开全文 >></a>
         </p>
       
-    </div>
-    <div class="article-info article-info-index">
-      
-      <a href="/2016/08/14/diary-2016-0807-0813/" class="archive-article-date">
-  	<time datetime="2016-08-14T02:36:00.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-08-14</time>
-</a>
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/旧事/">旧事</a></li></ul>
-	</div>
 
       
-
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-diary-2016-0731-0806" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/07/diary-2016-0731-0806/">旧事 等风来 7.31-8.6</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="/assets/blogImg/diary-7.jpg" alt=""></p>
-<p>七月底，去了趟冰雪世界。<br>之前很是期待，因为大半年没滑过雪，上次的情景还历历在目。<br>然而，只有滑冰…挺无趣的，说实话。<br>但期待是个好事<br>所以我也挺期待台风的（什么鬼逻辑？）</p>
-<p>八月初，妮妲过境。</p>
-<p>台风果真会影响人的思考与心绪。<br>以前那次是“黑云压城城欲摧”，如临大敌，跑还来不及<br>但这次甚至连雨点儿都没有<br>我一开始有点怀疑</p>
-<p>又突然想到，产品同学在给我布置大需求时<br>也是这般“暴风雨前的宁静”<br>那我还是跑吧…</p>
-<p>这周失眠严重<br>我想做很多事情，但一起步就感觉身体被枷锁连着<br>在夜晚，这些锁链碰得叮当作响<br>像是银白的蛛网，不断交织重叠。<br>我把佛经背了又背</p>
-<p>台风来的那天晚上<br>吹得窗户好响<br>反而睡得很好<br>可能，妮妲吹走了一些魔障吧</p>
-<p>每一个台风天，都像是我的老朋友。</p>
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      <a href="/2016/08/07/diary-2016-0731-0806/" class="archive-article-date">
-  	<time datetime="2016-08-07T02:36:00.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-08-07</time>
-</a>
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/旧事/">旧事</a></li></ul>
-	</div>
-
-      
-
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-gulangyu" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/01/gulangyu/">在鼓浪屿</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>—— litten 2015.11.04</p>
-<p>要不要去厦门玩玩？<br>这个问题，在出发前一晚还是个问题。<br>早上一起来，感觉无数个灵魂在逼催着我：去！<br>这感觉过于强烈，似乎不去那儿，世界就要毁灭了…</p>
-<p><img src="/assets/blogImg/gulangyu.jpg" alt="a cat"><br>
-        <p class="article-more-link">
-          <a class="article-more-a"  href="/2016/08/01/gulangyu/#more">more >></a>
-        </p>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      <a href="/2016/08/01/gulangyu/" class="archive-article-date">
-  	<time datetime="2016-07-31T17:36:00.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-08-01</time>
-</a>
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/旅行/">旅行</a></li></ul>
-	</div>
-
-      
-
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-diary-2016-0724-0730" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/31/diary-2016-0724-0730/">旧事 《巨人的陨落》7.24-7.30</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>吉他遇到了一些瓶颈，这周没练。<br>并且状态不好，休息一下。<br>击勾弦先这样吧<br>三连音的速度为什么还是这么慢<br>AM技巧总感觉拍的那下差了些什么</p>
-<p>是什么呢？是什么呢？是什么呢？</p>
-<p><img src="/assets/blogImg/diary-4.jpg" alt=""> </p>
-<p>然后看了会《巨人的陨落》。<br>的确是本好书，多线叙事本来就是我的菜。难得的，又没有开启上帝视角的感觉。<br>文笔很稳，有点像平静的湖水在慢慢上涨<br>你起初感受不到，回过神来，早已波澜壮阔。<br>这么说来有点像《天龙八部》，但多了点历史的更迭在其中。</p>
-<p>喜欢一句话叫“时代洪流下一个群体的苦苦挣扎”<br>很多时候，大家都说顺者生，逆者亡<br>但大多数人，在时代面前根本没有方向<br>他们，只是在挣扎</p>
-<p>王二与陈清扬如此。<br>白灵与鹿兆鹏也如此。</p>
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      <a href="/2016/07/31/diary-2016-0724-0730/" class="archive-article-date">
-  	<time datetime="2016-07-31T02:36:00.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-07-31</time>
-</a>
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/旧事/">旧事</a></li></ul>
-	</div>
-
-      
-
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
 
 
 
@@ -592,6 +611,8 @@
   
 
 
+          </div>
+        </div>
       </div>
       <footer id="footer">
   <div class="outer">
@@ -608,9 +629,7 @@
     </div>
     <script>
 	var yiliaConfig = {
-		fancybox: true,
 		mathjax: false,
-		animate: true,
 		isHome: true,
 		isPost: false,
 		isArchive: false,
@@ -622,41 +641,181 @@
 	}
 </script>
 
-<script src="/./main.js"></script>
+<script src="/./main.js?v=4.0.0.js"></script>
 
 
     
-<div class="tools-col">
-  <ul class="btn-wrap">
-    
-      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
-    
-    
-      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
-    
-    
-    
-      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
-    
-  </ul>
+<div class="tools-col" q-class="show:isShow,hide:isShow|isFalse" q-on="click:stop(e)">
   <div class="tools-wrap">
     
-    	<section class="tools-section tools-section-all chose">
+    	<section class="tools-section tools-section-all" q-show="innerArchive">
+        <div class="search-wrap">
+          <input class="search-ipt" q-model="search" type="text" placeholder="find something…">
+          <i class="icon-search icon" q-show="search|isEmptyStr"></i>
+          <i class="icon-close icon" q-show="search|isNotEmptyStr" q-on="click:clearChose(e)"></i>
+        </div>
+        <div class="widget tagcloud search-tag">
+          <p class="search-tag-wording">tag:</p>
+          <label class="search-switch">
+            <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
+          </label>
+          <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">html5</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">设计</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">杂谈</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">游戏</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">旧事</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">coffeescript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">web</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">旅行</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">css</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">css3</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">工具</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">chrome</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">生活</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">安全</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">黑科技</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">octopress</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">浏览器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">主题</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">经验</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">产品</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">前端</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">github</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">药别停</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">性能</a>
+              </li>
+            
+            <div class="clearfix"></div>
+          </ul>
+        </div>
+        <ul class="search-ul">
+          <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
+            缺失模块。<br/>1、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
+            2、在根目录_config.yml里添加配置：
+<pre style="font-size: 12px;" q-show="jsonFail">
+  jsonContent:
+    meta: false
+    pages: false
+    posts:
+      title: true
+      date: true
+      path: true
+      text: true
+      raw: false
+      content: false
+      slug: false
+      updated: false
+      comments: false
+      link: false
+      permalink: false
+      excerpt: false
+      categories: false
+      tags: true
+</pre>
+          </p>
+          <li class="search-li" q-repeat="items" q-show="isShow">
+            <a q-attr="href:path|urlformat" class="search-title"><i class="icon-quo-left icon"></i><span q-text="title"></span></a>
+            <p class="search-time">
+              <i class="icon-calendar icon"></i>
+              <span q-text="date|dateformat"></span>
+            </p>
+            <p class="search-tag">
+              <i class="icon-price-tags icon"></i>
+              <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
+            </p>
+          </li>
+        </ul>
     	</section>
     
 
     
-    	<section class="tools-section tools-section-tag">
-    			<div class="widget tagcloud" id="js-tagcloud">
-    				<a href="/tags/chrome/" style="font-size: 10px;">chrome</a> <a href="/tags/coffeescript/" style="font-size: 12px;">coffeescript</a> <a href="/tags/css/" style="font-size: 14px;">css</a> <a href="/tags/css3/" style="font-size: 12px;">css3</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 12px;">hexo</a> <a href="/tags/html5/" style="font-size: 16px;">html5</a> <a href="/tags/js/" style="font-size: 18px;">js</a> <a href="/tags/octopress/" style="font-size: 12px;">octopress</a> <a href="/tags/web/" style="font-size: 18px;">web</a> <a href="/tags/主题/" style="font-size: 14px;">主题</a> <a href="/tags/产品/" style="font-size: 12px;">产品</a> <a href="/tags/前端/" style="font-size: 14px;">前端</a> <a href="/tags/安全/" style="font-size: 10px;">安全</a> <a href="/tags/工具/" style="font-size: 12px;">工具</a> <a href="/tags/性能/" style="font-size: 10px;">性能</a> <a href="/tags/旅行/" style="font-size: 12px;">旅行</a> <a href="/tags/旧事/" style="font-size: 20px;">旧事</a> <a href="/tags/杂谈/" style="font-size: 12px;">杂谈</a> <a href="/tags/模式/" style="font-size: 10px;">模式</a> <a href="/tags/浏览器/" style="font-size: 12px;">浏览器</a> <a href="/tags/游戏/" style="font-size: 10px;">游戏</a> <a href="/tags/生活/" style="font-size: 16px;">生活</a> <a href="/tags/经验/" style="font-size: 10px;">经验</a> <a href="/tags/药别停/" style="font-size: 12px;">药别停</a> <a href="/tags/设计/" style="font-size: 12px;">设计</a> <a href="/tags/黑科技/" style="font-size: 10px;">黑科技</a>
-    			</div>
-    	</section>
-    
 
     
-
-    
-    	<section class="tools-section tools-section-me">
+    	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
   	  		<div class="aboutme-wrap" id="js-aboutme">Litten，&lt;br&gt;毕业于华科，就职于鹅厂&lt;br&gt;&lt;br&gt;热爱大海与冷笑话，&lt;br/&gt;目前是一枚前端&lt;br/&gt;&lt;br/&gt;胆小认生，不易相处，&lt;br&gt;年轻无为，卖马为生。</div>
   	  	
